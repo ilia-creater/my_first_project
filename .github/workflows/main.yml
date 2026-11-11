@@ -20,4 +20,10 @@ jobs:
           python-version: "3.x"
 
       - name: Check Python syntax
-        run: python -m py_compile hello.py
+        run: python -m py_compile hello.py 
+      - name: Install Flake8
+        run: pip install flake8
+
+      - name: Check code style
+        run: flake8 hello.py
+        
