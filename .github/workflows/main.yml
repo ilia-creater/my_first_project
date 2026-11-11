@@ -26,4 +26,3 @@ jobs:
 
       - name: Check code style
         run: flake8 hello.py
-        
